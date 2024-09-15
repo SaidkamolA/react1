@@ -1,0 +1,101 @@
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, p, div {
+  margin: 10px;
+}
+
+
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.light-mode button {
+  background-color: #ddd;
+  color: #333;
+}
+
+
+body.dark-mode button {
+  background-color: #444;
+  color: #eee;
+}
+
+
+.card {
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.light-mode .card {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+body.dark-mode .card {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.card .count {
+  font-size: 1em;
+  color: #888;
+  margin-top: 10px;
+}
